@@ -263,7 +263,7 @@ class Manager
                                                     ->get() );
 
                 foreach ( $tree as $locale => $groups ) {
-                    if ( isset( $groups[ $group ] ) ) {
+                    if ( isset( $groups[ $group ] ) && !in_array( $locale, $this->config[ 'exclude_export_langs' ] ) ) {
                         $translations = $groups[ $group ];
                         $path         = $this->app[ 'path.lang' ];
 
