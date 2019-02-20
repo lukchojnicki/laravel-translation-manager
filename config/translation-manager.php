@@ -47,6 +47,18 @@ return [
      *    )
      */
     'exclude_langs'  => [],
+    
+     /**
+     * Exclude specific languages from export.
+     *
+     * @type array
+     *
+     *    array(
+     *        'fr',
+     *        'de',
+     *    )
+     */
+    'exclude_export_langs'  => [],
 
     /**
      * Export translations with keys output alphabetically.
